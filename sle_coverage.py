@@ -21,6 +21,8 @@ API_URL = 'https://api.mist.com/api/v1'
 output = {}
 
 
+#To display SLE Coverage % for site for last 7 days
+
 class Project(object):
     def __init__(self, token=''):
         self.session = requests.Session()
