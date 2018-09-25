@@ -1,4 +1,5 @@
-# Project: To display SLE Coverage % for site for last 7 days
+# Project: To display SLE Coverage % for site with less than 80% coverage, for last 7 days
+
 
 **To get started, you’ll want to install the virtualenv tool with pip:**
 >$ pip install virtualenv
