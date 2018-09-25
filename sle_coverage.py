@@ -2,6 +2,7 @@ import requests
 import urllib3
 import math
 import os, sys, json
+import csv
 from collections import OrderedDict
 from datetime import datetime, timedelta
 
@@ -131,8 +132,13 @@ class Project(object):
 
         print("\n")
 
-        for x in sorted_output:
-            print (x[0],' ---->> ', x[1])
+        #formatting sorted_output to csv output with csv writer
+
+        with open('coverage_data_file.csv','w') as out:
+            csv_out=csv.writer(out)
+            csv_out.writerow(['Site name','Coverage in % for last 7 days'])
+            for row in sorted_output:
+                csv_out.writerow(row)
 
 
 
