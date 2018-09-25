@@ -1,4 +1,4 @@
-# Project-AP-metric-data
+# Project: To display SLE Coverage % for site for last 7 days
 
 **To get started, you’ll want to install the virtualenv tool with pip:**
 >$ pip install virtualenv
@@ -21,3 +21,6 @@ $ python3 -m venv env
 
 **To go back to the “system” context by executing deactivate:**
 >(env) $ deactivate
+
+**Create file for csv writer:**
+>(env) $ touch coverage_data_file.csv
